@@ -28,7 +28,7 @@ sudo service mysql status
 ```
 * Further Run below command to login to mysql
 ```ruby
-mysql -u root -p
+sudo mysql -u root -p
 ```
 * Now create a database for zabbix, make sure to replace 'password' with your password
 ```ruby
@@ -39,7 +39,7 @@ mysql> quit;
 ```
 * Now run below command and enter password you just created.
 ```ruby
-# zcat /usr/share/doc/zabbix-sql-scripts/mysql/server.sql.gz | mysql -uzabbix -p zabbix
+zcat /usr/share/doc/zabbix-sql-scripts/mysql/server.sql.gz | mysql -uzabbix -p zabbix
 ```
 
 ### Step 5 : Check the status of the server and agent.
@@ -51,16 +51,13 @@ sudo service zabbix-agent status
 ```
 ### Step 6 : Configure password in zabbix_server.conf
 ```ruby
-sudo service zabbix-server status ## it will show inactive, fine for now
-```
-```ruby
-nano /etc/zabbix/zabbix_server.conf
-DBPassword= Enter your password
+sudo nano /etc/zabbix/zabbix_server.conf
+DBPassword= Enter your DB password
 ```
 ### step 7 : Start Zabbix server and agent processes
 ```ruby
-systemctl restart zabbix-server zabbix-agent apache2
-systemctl enable zabbix-server zabbix-agent apache2
+sudo systemctl restart zabbix-server zabbix-agent apache2
+sudo systemctl enable zabbix-server zabbix-agent apache2
 ```
 ### step 8: Restart the apache server
 ```ruby
