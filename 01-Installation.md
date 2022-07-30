@@ -4,11 +4,10 @@
 [Zabbix Download Link](https://www.zabbix.com/download?zabbix=6.0&os_distribution=ubuntu&os_version=20.04_focal&db=mysql&ws=apache)
 
 ### Step 2 : Run all 4 command show in step 2 under a. Install Zabbix repository and b. Install Zabbix server, frontend, agent on installation page.
-* 2. Install and configure Zabbix server for your platform 
+* 2 Install and configure Zabbix server for your platform 
 
 
 ### Step 3 : Check the status of the server and agent.
-* Create a main folder named DVC-02-Data_Versioning and 2 subfolder under it named DataFileVersioning and DVCRemote. Then move into 02-DVC_Data_Versioning
 ```ruby
 sudo service zabbix-server status ## it will show inactive, fine for now
 ```
