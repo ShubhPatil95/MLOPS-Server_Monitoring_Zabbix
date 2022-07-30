@@ -1,7 +1,12 @@
 <h1>Zabbix Installation</h1>
 
+
 ### Step 1 : Go to zabbix website and download the zabbix as per your OS version.
 [Zabbix Download Link](https://www.zabbix.com/download?zabbix=6.0&os_distribution=ubuntu&os_version=20.04_focal&db=mysql&ws=apache)
+* To check which operating system you are using
+```ruby
+hostnamectl
+```
 
 ### Step 2 : Run all 4 command show in step 2 under a. Install Zabbix repository and b. Install Zabbix server, frontend, agent on installation page.
 * 2 Install and configure Zabbix server for your platform 
