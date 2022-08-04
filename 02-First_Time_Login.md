@@ -20,7 +20,7 @@ http://Your_Server_IP_Or_Name:Port_Number/zabbix
 * Dabase Type : Shubham_Zabbix_Server
 
 ### Step 4: Login with below default credentials amd sign in to your account.
-Username: Admin
+Username: Admin <br>
 Password : zabbix
 
 ### Step 5: Change Password
