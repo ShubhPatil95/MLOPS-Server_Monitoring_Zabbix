@@ -1,8 +1,11 @@
 <h1>First_Time_Login</h1>
 
 ### Step1 : Go to below URL
+Make sure your web server(e.g apache2 has default port:80) is hosted on deafult port, since below command will send request to deafult port of web server.<br>
+However in case your web server is not hosted on default port then you must use second URL.
 ```ruby
 http://You_Server_Ip_Or_Name/zabbix
+http://Your_Server_IP_Or_Name:Port_Number/zabbix
 ```
 ### Step 2: Click NEXT and verify below and then again click NEXT
 * Dabase Type : MySQL
